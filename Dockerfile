@@ -1,8 +1,6 @@
 #
-# Dockerfile for cpuminer
-# usage: docker run creack/cpuminer --url xxxx --user xxxx --pass xxxx
-# ex: docker run creack/cpuminer --url stratum+tcp://ltc.pool.com:80 --user creack.worker1 --pass abcdef
-#
+# Dockerfile for rpi-cpuminer
+# usage: docker run davidhbarnes/rpi-cpuminer -o stratum+tcp:// -u xxxx -pass x# usage: docker run creack/cpuminer --url xxxx --user xxxx --pass xxxx
 #
 
 FROM            resin/rpi-raspbian:latest
