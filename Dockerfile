@@ -12,10 +12,10 @@ RUN             apt-get update -qq && \
 
 RUN             git clone https://github.com/davidhbarnes/rpi-cpuminer
 
-RUN             cd cpuminer && \
+RUN             cd rpi-cpuminer && \
                 ./autogen.sh && \
                 ./configure CFLAGS="-O3 -mfpu=neon" && \
                 make
 
-WORKDIR         /cpuminer
+WORKDIR         /rpi-cpuminer
 ENTRYPOINT      ["./minerd"]
